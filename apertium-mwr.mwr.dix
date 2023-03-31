@@ -137,6 +137,10 @@
     <e lm="जीमना"><i>जीमना</i><par n="ध/ा__n_m"/></e>
     <e lm="बैलाना"><i>बैलाना</i><par n="ध/ा__n_m"/></e>
     <e lm="बटको"><i>बटको</i><par n="n"/></e>
+    <e lm="कुण"><i>कुण</i><par n="prn"/></e>
+    <e lm="चाल"><i>चाल</i><par n="prn"/></e>
+    <e lm="नाम"><i>नाम</i><par n="n"/></e>
+    <e lm="जोगा"><i>जोगा</i><par n="n"/></e>
   </section>
 
   <section id="final" type="inconditional">
