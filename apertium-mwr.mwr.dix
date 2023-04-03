@@ -91,9 +91,13 @@
     <sdef n="rpar"            c="Right parenthesis"/>
     <sdef n="lquot"           c="Left quote"/>
     <sdef n="rquot"           c="Right quote"/>
-
-    <sdef n="compound-only-L" c="May only be the left-side of a compound"/>
+    <sdef n="tv"		c="" />
+    <sdef n="stem" c="stem"/>    <sdef n="compound-only-L" c="May only be the left-side of a compound"/>
+    <sdef n="mf" c=""/>
     <sdef n="compound-R"      c="May be the right-side of a compound, or a full word"/>
+    <sdef n="dat" c="Dative"/>
+    <sdef n="post"    c="Postposition"/>  
+    <sdef n="pol"	  c="polite"/> 
   </sdefs>
 
   <pardefs>
@@ -117,6 +121,46 @@
       <e><p><l>ा</l><r>ा<s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
        <e><p><l>े</l><r>ा<s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
     </pardef>
+    <pardef n="मैरी__np">
+      <e><p><l></l><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+    </pardef>
+    
+    <pardef n="भारत__np">
+      <e><p><l></l><r><s n="np"/><s n="top"/><s n="sg"/></r></p></e>
+    </pardef>
+    <pardef n = "ह/म__prn"> 
+      <e><p><l>में</l><r>म<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/><s n="dat"/></r></p></e>
+      <e><p><l>मरॊ</l><r>म<s n="prn"/><s n="pers"/><s n="p1"/><s n="m"/><s n="pl"/><s n="gen"/></r></p></e> 
+      <e><p><l>मरा</l><r>म<s n="prn"/><s n="pers"/><s n= "p1"/><s n="f"/><s n="pl"/><s n="gen"/></r></p></e> 
+    </pardef>
+    <pardef n="बाच__vblex_tv">
+      <e><p><l></l><r><s n="vblex"/><s n="tv"/><s n="stem"/></r></p></e>
+    </pardef>
+    <pardef n="हमार/ा__det">
+      <e><p><l>ा</l><r>ा<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ी</l><r>ा<s n="det"/><s n="pos"/><s n="f"/><s n="sg"/></r></p></e>
+    </pardef>
+    <pardef n="ने__post">
+      <e><p><l></l><r><s n="post"/></r></p></e>
+    </pardef>
+    <pardef n="/हो__vbser">
+      <e>   	<p><l>हूँ</l><r>हो<s n="vbser"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e>   	<p><l>हैं</l><r>हो<s n="vbser"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e>   	<p><l>हैं</l><r>हो<s n="vbser"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+  
+      <e>   	<p><l>है</l><r>हो<s n="vbser"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e>   	<p><l>हो</l><r>हो<s n="vbser"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+  
+      <e>   	<p><l>है</l><r>हो<s n="vbser"/><s n="pres"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e>   	<p><l>हैं</l><r>हो<s n="vbser"/><s n="pres"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e> 	 
+    </pardef>
+    <pardef n="अपन/ा__prn">
+      <e><p><l>ा</l><r>ा<s n="prn"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ी</l><r>ा<s n="prn"/><s n="pos"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>े</l><r>ा<s n="prn"/><s n="pos"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>ी</l><r>ा<s n="prn"/><s n="pos"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>े</l><r>ा<s n="prn"/><s n="pos"/><s n="pol"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -126,21 +170,30 @@
     -->
     <e lm="पैसा"><i>पैसा</i><par n="ध/ा__n_m"/></e>
     <e lm="खम्मा घणी"><i>खम्मा घणी</i><par n="ध/ा__n_m"/></e>
-    <e lm="म्हारो"><i>म्हारो</i><par n="ध/ा__n_m"/></e>
-    <e lm="गांव"><i>गांव</i><par n="ध/ा__n_m"/></e>
+    <e lm="गांव"><i>गांव</i><par n="भारत__np"/></e>
     <e lm="आभ"><i>आभ</i><par n="ध/ा__n_m"/></e>
     <e lm="आछौ"><i>आछौ</i><par n="ध/ा__n_m"/></e>
     <e lm="बास्ते"><i>बास्ते</i><par n="ध/ा__n_m"/></e>
     <e lm="घाबा"><i>घाबा</i><par n="ध/ा__n_m"/></e>
     <e lm="भायलो"><i>भायलो</i><par n="ध/ा__n_m"/></e>
     <e lm="तावड़ो"><i>तावड़ो</i><par n="ध/ा__n_m"/></e>
-    <e lm="जीमना"><i>जीमना</i><par n="ध/ा__n_m"/></e>
-    <e lm="बैलाना"><i>बैलाना</i><par n="ध/ा__n_m"/></e>
-    <e lm="बटको"><i>बटको</i><par n="n"/></e>
-    <e lm="कुण"><i>कुण</i><par n="prn"/></e>
-    <e lm="चाल"><i>चाल</i><par n="prn"/></e>
-    <e lm="नाम"><i>नाम</i><par n="n"/></e>
-    <e lm="जोगा"><i>जोगा</i><par n="n"/></e>
+    <e lm="जीमना"><i>खाना</i><par n="बाच__vblex_tv"/></e>
+    <e lm="बैलाना"><i>बैलाना</i><par n="बाच__vblex_tv"/></e>
+    <e lm="बटको"><i>बटको</i><par n="ध/ा__n_m"/></e>
+    <e lm="कुण"><i>कुण</i><par n="ध/ा__n_m"/></e>
+    <e lm="चाल"><i>चाल</i><par n="बाच__vblex_tv"/></e>
+    <e lm="नाम"><i>नाम</i><par n="ध/ा__n_m"/></e>
+    <e lm="जोगा"><i>जोगा</i><par n="मैरी__np"/></e>
+    <e lm="म्हारो"><i>म्हारो</i><par n="अपन/ा__prn"/></e>
+    <e lm="है"><i>है</i><par n="/हो__vbser"/></e>
+    <e lm="मित्र"><i>मित्र</i><par n="ध/ा__n_m"/></e>
+    <e lm="तो"><i>तो</i><par n="ध/ा__n_m"/></e>
+    <e lm="दीजियो"><i>दीजियो</i><par n="बाच__vblex_tv"/></e>
+    <e lm="दीजियो"><i>कृपा</i><par n="बाच__vblex_tv"/></e>
+    <e lm="आपनो"><i>आपनो</i><par n="ह/म__prn"/></e>
+    <e lm="घर"><i>घर</i><par n="ध/ा__n_m"/></e>
+    <e lm="मा"><i>मा</i><par n="ने__post"/></e>
+    <e lm="उद्योगनगर"><i>उद्योगनगर</i><par n="मैरी__np"/></e>
   </section>
 
   <section id="final" type="inconditional">
